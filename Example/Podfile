@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'ADXLibrary_Example' do
+  pod 'ADXLibrary', :path => '../'
+
+  target 'ADXLibrary_Tests' do
+    inherit! :search_paths
+
+    pod 'FBSnapshotTestCase'
+  end
+end
