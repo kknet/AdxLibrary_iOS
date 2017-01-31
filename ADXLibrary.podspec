@@ -38,5 +38,10 @@ TODO: Add long description of the pod here.
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.ios.vendored_frameworks = 'ADXLibrary/Classes/Mobvista/SDK/MVSDK.framework'
+  s.library       = 'z', 'sqlite3'
+  s.dependency 'mopub-ios-sdk'                                                      # MoPub
+  s.dependency 'FBAudienceNetwork'                                                  # FAN
+  s.dependency 'Google-Mobile-Ads-SDK'                                              # AdMob
+  s.dependency 'MobFoxSDK'                                                          # MobFox
 end

@@ -1,11 +1,11 @@
-use_frameworks!
+#use_frameworks!
 
 target 'ADXLibrary_Example' do
-  pod 'ADXLibrary', :path => '../'
-
   target 'ADXLibrary_Tests' do
     inherit! :search_paths
-
-    pod 'FBSnapshotTestCase'
+        
+#    pod 'FBSnapshotTestCase'
+    pod 'MobFoxSDK', :git => 'https://github.com/mobfox/MobFox-iOS-SDK.git'
   end
+  pod 'ADXLibrary', :path => '../'
 end

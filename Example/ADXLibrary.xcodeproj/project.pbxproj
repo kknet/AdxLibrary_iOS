@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		35D4881E1ACEE0ACCF7A00EF /* Pods_ADXLibrary_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D0C7A2874940836779B1572 /* Pods_ADXLibrary_Tests.framework */; };
-		5EA5A406368A37753D6C9296 /* Pods_ADXLibrary_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4078327DF3528E0A2C75183F /* Pods_ADXLibrary_Example.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -23,7 +21,9 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
+		74D26FDABACCE1DFF9E865E3 /* libPods-ADXLibrary_Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C3D5564DF78D5A1579B1D42 /* libPods-ADXLibrary_Tests.a */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		8C5954F7E1966E13813DA086 /* libPods-ADXLibrary_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B0EA09FA2E5759A62C7AF305 /* libPods-ADXLibrary_Example.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +38,8 @@
 
 /* Begin PBXFileReference section */
 		107FA5C9F7D012D38B19A15F /* Pods-ADXLibrary_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ADXLibrary_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ADXLibrary_Tests/Pods-ADXLibrary_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		2C3D5564DF78D5A1579B1D42 /* libPods-ADXLibrary_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ADXLibrary_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CF1E3E5480B674542F88E81 /* Pods-ADXLibrary_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ADXLibrary_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ADXLibrary_Example/Pods-ADXLibrary_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		4078327DF3528E0A2C75183F /* Pods_ADXLibrary_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ADXLibrary_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* ADXLibrary_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ADXLibrary_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -59,14 +59,14 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		6D0C7A2874940836779B1572 /* Pods_ADXLibrary_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ADXLibrary_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		78822DD183567068D5A17510 /* Pods-ADXLibrary_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ADXLibrary_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ADXLibrary_Tests/Pods-ADXLibrary_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		9084150C9643EC05B4FE2C14 /* ADXLibrary.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = ADXLibrary.podspec; path = ../ADXLibrary.podspec; sourceTree = "<group>"; };
+		9084150C9643EC05B4FE2C14 /* ADXLibrary.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ADXLibrary.podspec; path = ../ADXLibrary.podspec; sourceTree = "<group>"; };
 		A59E8065B8234F231A91201D /* Pods-ADXLibrary_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ADXLibrary_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-ADXLibrary_Example/Pods-ADXLibrary_Example.release.xcconfig"; sourceTree = "<group>"; };
-		C936B067E61B41E041B23E4F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		FA34C7BABA5C2B37C20389F9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		B0EA09FA2E5759A62C7AF305 /* libPods-ADXLibrary_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ADXLibrary_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C936B067E61B41E041B23E4F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		FA34C7BABA5C2B37C20389F9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +77,7 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				5EA5A406368A37753D6C9296 /* Pods_ADXLibrary_Example.framework in Frameworks */,
+				8C5954F7E1966E13813DA086 /* libPods-ADXLibrary_Example.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,7 +88,7 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				35D4881E1ACEE0ACCF7A00EF /* Pods_ADXLibrary_Tests.framework in Frameworks */,
+				74D26FDABACCE1DFF9E865E3 /* libPods-ADXLibrary_Tests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,8 +123,8 @@
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
-				4078327DF3528E0A2C75183F /* Pods_ADXLibrary_Example.framework */,
-				6D0C7A2874940836779B1572 /* Pods_ADXLibrary_Tests.framework */,
+				B0EA09FA2E5759A62C7AF305 /* libPods-ADXLibrary_Example.a */,
+				2C3D5564DF78D5A1579B1D42 /* libPods-ADXLibrary_Tests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -251,6 +251,7 @@
 				ORGANIZATIONNAME = "Chiung Choi";
 				TargetAttributes = {
 					6003F5AD195388D20070C39A = {
+						LastSwiftMigration = 0820;
 						TestTargetID = 6003F589195388D20070C39A;
 					};
 				};
@@ -568,6 +569,7 @@
 				INFOPLIST_FILE = "Tests/Tests-Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ADXLibrary_Example.app/ADXLibrary_Example";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -588,6 +590,7 @@
 				INFOPLIST_FILE = "Tests/Tests-Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ADXLibrary_Example.app/ADXLibrary_Example";
 				WRAPPER_EXTENSION = xctest;
 			};
