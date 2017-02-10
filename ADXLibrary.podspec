@@ -9,20 +9,12 @@
 Pod::Spec.new do |s|
   s.name             = 'ADXLibrary'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of ADXLibrary.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
+  s.summary          = 'ADX Library for iOS'
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+ADX Library for iOS
                        DESC
 
   s.homepage         = 'https://github.com/adxcorp/AdxLibrary_iOS'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Chiung Choi' => 'god@adxcorp.kr' }
   s.source           = { :git => 'https://github.com/adxcorp/AdxLibrary_iOS.git', :tag => s.version.to_s }
@@ -38,10 +30,11 @@ TODO: Add long description of the pod here.
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  s.ios.vendored_frameworks = 'ADXLibrary/Classes/Mobvista/SDK/MVSDK.framework'
+  s.ios.vendored_frameworks =   'ADXLibrary/Classes/FAN/FBAudienceNetwork.framework',
+                                'ADXLibrary/Classes/Mobfox/MobFoxSDKCore.framework',
+                                'ADXLibrary/Classes/Mobvista/MVSDK.framework',
+                                'ADXLibrary/Classes/AdMob/GoogleMobileAds.framework'
+  s.dependency 'mopub-ios-sdk'
+
   s.library       = 'z', 'sqlite3'
-  s.dependency 'mopub-ios-sdk'                                                      # MoPub
-  s.dependency 'FBAudienceNetwork'                                                  # FAN
-  s.dependency 'Google-Mobile-Ads-SDK'                                              # AdMob
-  s.dependency 'MobFoxSDK'                                                          # MobFox
 end

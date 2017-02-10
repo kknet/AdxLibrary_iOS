@@ -1,0 +1,5 @@
+*.framework filter=lfs diff=lfs merge=lfs -text
+ADXLibrary/Classes/Mobvista/MVSDK.framework filter=lfs diff=lfs merge=lfs -text
+ADXLibrary/Classes/Mobfox/MobFoxSDKCore.framework filter=lfs diff=lfs merge=lfs -text
+ADXLibrary/Classes/FAN/FBAudienceNetwork.framework filter=lfs diff=lfs merge=lfs -text
+ADXLibrary/Classes/AdMob/GoogleMobileAds.framework filter=lfs diff=lfs merge=lfs -text

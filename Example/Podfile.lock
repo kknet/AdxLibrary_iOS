@@ -1,0 +1,28 @@
+PODS:
+  - ADXLibrary (0.1.0):
+    - mopub-ios-sdk
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
+  - mopub-ios-sdk (4.11.1):
+    - mopub-ios-sdk/MoPubSDK (= 4.11.1)
+  - mopub-ios-sdk/MoPubSDK (4.11.1)
+
+DEPENDENCIES:
+  - ADXLibrary (from `../`)
+  - FBSnapshotTestCase
+
+EXTERNAL SOURCES:
+  ADXLibrary:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ADXLibrary: 27664ccd96352b268cce266fc1f053de6bf613ab
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  mopub-ios-sdk: 099068378872b60ae5be882dbcfbaa3a8a2b1c36
+
+PODFILE CHECKSUM: c63c72d98ec014474114d9d8a33137ac7c35fcf4
+
+COCOAPODS: 1.2.0
