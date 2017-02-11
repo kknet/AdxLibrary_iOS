@@ -20,9 +20,9 @@
 static BOOL initialized = NO;
 - (void)requestAdWithCustomEventInfo:(NSDictionary *)info
 {
-    NSString *appId = [NSString stringWithFormat:@"%@",[info objectForKey:@"appId"]];//nonnull
-    NSString *appKey = [NSString stringWithFormat:@"%@",[info objectForKey:@"appKey"]];//nonnull
-    NSString *unitId = [NSString stringWithFormat:@"%@",[info objectForKey:@"unitId"]];//nonnull
+    NSString *appId = [NSString stringWithFormat:@"%@",[info objectForKey:@"app_id"]];//nonnull
+    NSString *appKey = [NSString stringWithFormat:@"%@",[info objectForKey:@"app_key"]];//nonnull
+    NSString *unitId = [NSString stringWithFormat:@"%@",[info objectForKey:@"adunit_id"]];//nonnull
     NSString *placementID = [NSString stringWithFormat:@"%@",[info objectForKey:@"placementId"]];
     
     BOOL autoCacheImage = [[info objectForKey:@"autoCacheImage"] boolValue];
