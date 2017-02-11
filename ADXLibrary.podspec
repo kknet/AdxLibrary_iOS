@@ -30,10 +30,10 @@ ADX Library for iOS
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  s.ios.vendored_frameworks =   'ADXLibrary/Classes/FAN/FBAudienceNetwork.framework',
-                                'ADXLibrary/Classes/Mobfox/MobFoxSDKCore.framework',
-                                'ADXLibrary/Classes/Mobvista/MVSDK.framework',
-                                'ADXLibrary/Classes/AdMob/GoogleMobileAds.framework'
+  s.ios.vendored_frameworks =   'ADXLibrary/Dependencies/FBAudienceNetwork.framework',
+                                'ADXLibrary/Dependencies/MobFoxSDKCore.framework',
+                                'ADXLibrary/Dependencies/MVSDK.framework',
+                                'ADXLibrary/Dependencies/GoogleMobileAds.framework'
   s.dependency 'mopub-ios-sdk'
 
   s.library       = 'z', 'sqlite3'

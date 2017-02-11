@@ -19,7 +19,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  ADXLibrary: 27664ccd96352b268cce266fc1f053de6bf613ab
+  ADXLibrary: cc04cfc750e773b280e2c2fbfe8d91292984e7e6
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
   mopub-ios-sdk: 099068378872b60ae5be882dbcfbaa3a8a2b1c36
 
