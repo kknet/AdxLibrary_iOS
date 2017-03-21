@@ -22,10 +22,6 @@ static BOOL initialized = NO;
 
 - (void)requestAdWithSize:(CGSize)size customEventInfo:(NSDictionary *)info
 {
-    /**
-     * Facebook Banner ads can accept arbitrary widths for given heights of 50 and 90. We convert these sizes
-     * to Facebook's constants and set the fbAdView's size to the intended size ("size" passed to this method).
-     */
     if(!CGSizeEqualToSize(size, CGSizeMake(320, 50))) {
         MPLogError(@"Invalid size for Mobvista banner ad");
         [self.delegate bannerCustomEvent:self didFailToLoadAdWithError:nil];
