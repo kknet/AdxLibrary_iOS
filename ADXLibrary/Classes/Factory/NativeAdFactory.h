@@ -42,9 +42,6 @@
 - (void)setRenderingViewClass:(NSString *)adUnitId renderingViewClass:(Class)renderingViewClass;
 - (Class)getRenderingViewClass:(NSString *)adUnitId;
 
-- (void)setViewSizeHandler:(NSString *)adUnitId viewSizeHandler:(MPNativeViewSizeHandler)viewSizeHandler;
-- (MPNativeViewSizeHandler)getViewSizeHandler:(NSString *)adUnitId;
-
 - (UIView *)getNativeAdView:(NSString *)adUnitId;
 
 @end

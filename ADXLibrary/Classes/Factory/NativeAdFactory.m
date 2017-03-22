@@ -107,11 +107,9 @@
     [self setIsPreloading:adUnitId isLoading:YES];
     
     Class renderingViewClass = [self getRenderingViewClass:adUnitId];
-    MPNativeViewSizeHandler viewSizeHandler = [self getViewSizeHandler:adUnitId];
     
     MPStaticNativeAdRendererSettings *settings = [[MPStaticNativeAdRendererSettings alloc] init];
     settings.renderingViewClass = renderingViewClass;
-    settings.viewSizeHandler = viewSizeHandler;
     
     MPNativeAdRendererConfiguration *config = [MPStaticNativeAdRenderer rendererConfigurationWithRendererSettings:settings];
     config.supportedCustomEvents = @[@"MPMoPubNativeCustomEvent", @"FacebookNativeCustomEvent", @"InMobiNativeCustomEvent", @"MillennialNativeCustomEvent", @"MobvistaNativeCustomEvent"];
@@ -166,15 +164,7 @@
 }
 
 - (Class)getRenderingViewClass:(NSString *)adUnitId {
-    [_renderingViewClasses objectForKey:adUnitId];
-}
-
-- (void)setViewSizeHandler:(NSString *)adUnitId viewSizeHandler:(MPNativeViewSizeHandler)viewSizeHandler {
-    [_viewSizeHandlers setObject:_viewSizeHandlers forKey:adUnitId];
-}
-
-- (MPNativeViewSizeHandler)getViewSizeHandler:(NSString *)adUnitId {
-    [_viewSizeHandlers objectForKey:adUnitId];
+    return [_renderingViewClasses objectForKey:adUnitId];
 }
 
 - (UIView *)getNativeAdView:(NSString *)adUnitId {
