@@ -176,6 +176,9 @@
     
     UIView * view = [nativeAd retrieveAdViewWithError:nil];
     
+    [_nativeAds removeObjectForKey:adUnitId];
+    [self preloadAd:adUnitId];
+    
     return view;
 }
 
