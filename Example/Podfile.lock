@@ -1,5 +1,5 @@
 PODS:
-  - ADXLibrary (0.1.0):
+  - ADXLibrary (0.1.6):
     - mopub-ios-sdk
   - FBSnapshotTestCase (2.1.4):
     - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
@@ -19,7 +19,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  ADXLibrary: cc04cfc750e773b280e2c2fbfe8d91292984e7e6
+  ADXLibrary: 5c8885f7fad3f445fc04b9c079f08ef001effeed
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
   mopub-ios-sdk: 099068378872b60ae5be882dbcfbaa3a8a2b1c36
 
