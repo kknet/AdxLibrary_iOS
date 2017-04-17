@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ADXLibrary'
-  s.version          = '0.1.7'
+  s.version          = '1.0.0'
   s.summary          = 'ADX Library for iOS'
   s.description      = <<-DESC
 ADX Library for iOS
