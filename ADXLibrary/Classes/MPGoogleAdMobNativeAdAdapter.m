@@ -17,10 +17,6 @@ static NSString *const kGADMStoreKey = @"store";
 - (instancetype)initWithAdMobNativeContentAd:(GADNativeContentAd *)adMobNativeContentAd {
   if (self = [super init]) {
     self.adMobNativeContentAd = adMobNativeContentAd;
-    self.adMobNativeContentAd.delegate = self;
-
-    // Initializing adChoicesView with default size of (20, 20).
-    _adChoicesView = [[GADAdChoicesView alloc] initWithFrame:CGRectMake(0, 0, 20, 20)];
 
     NSMutableDictionary *properties = [NSMutableDictionary dictionary];
 
@@ -58,10 +54,6 @@ static NSString *const kGADMStoreKey = @"store";
 - (instancetype)initWithAdMobNativeAppInstallAd:(GADNativeAppInstallAd *)adMobNativeAppInstallAd {
   if (self = [super init]) {
     self.adMobNativeAppInstallAd = adMobNativeAppInstallAd;
-    self.adMobNativeAppInstallAd.delegate = self;
-
-    // Initializing adChoicesView with default size of (20, 20).
-    _adChoicesView = [[GADAdChoicesView alloc] initWithFrame:CGRectMake(0, 0, 20, 20)];
 
     NSMutableDictionary *properties = [NSMutableDictionary dictionary];
 
@@ -104,23 +96,7 @@ static NSString *const kGADMStoreKey = @"store";
   return self;
 }
 
-#pragma mark - <GADNativeAdDelegate>
-
-- (void)nativeAdDidRecordImpression:(GADNativeAd *)nativeAd {
-  // Sending impression to MoPub SDK.
-  [self.delegate nativeAdWillLogImpression:self];
-}
-
-- (void)nativeAdDidRecordClick:(GADNativeAd *)nativeAd {
-  // Sending click to MoPub SDK.
-  [self.delegate nativeAdDidClick:self];
-}
-
 #pragma mark - <MPNativeAdAdapter>
-
-- (UIView *)privacyInformationIconView {
-  return _adChoicesView;
-}
 
 - (BOOL)enableThirdPartyClickTracking {
   return YES;

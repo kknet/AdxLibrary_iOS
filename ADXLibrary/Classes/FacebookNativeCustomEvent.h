@@ -11,10 +11,10 @@
     #import "MPNativeCustomEvent.h"
 #endif
 
-/*
- * Please reference the Supported Mediation Partner page at http://bit.ly/2mqsuFH for the
- * latest version and ad format certifications.
+/**
+ * Certified with the Facebook iOS SDK version 4.8.0
  */
+
 @interface FacebookNativeCustomEvent : MPNativeCustomEvent
 
 

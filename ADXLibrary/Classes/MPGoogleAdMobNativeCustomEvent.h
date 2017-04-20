@@ -4,12 +4,13 @@
 #import "MPNativeCustomEvent.h"
 #endif
 
-#import <GoogleMobileAds/GoogleMobileAds.h>
+#define AD_CHOICES_TOP_LEFT         @"ADCHOICES_TOP_LEFT"
+#define AD_CHOICES_TOP_RIGHT        @"ADCHOICES_TOP_RIGHT"
+#define AD_CHOICES_BOTTOM_RIGHT     @"ADCHOICES_BOTTOM_RIGHT"
+#define AD_CHOICES_BOTTOM_LEFT      @"ADCHOICES_BOTTOM_LEFT"
 
+@import GoogleMobileAds;
 
 @interface MPGoogleAdMobNativeCustomEvent : MPNativeCustomEvent
-
-/// Sets the preferred location of the AdChoices icon.
-+ (void)setAdChoicesPosition:(GADAdChoicesPosition)position;
 
 @end
