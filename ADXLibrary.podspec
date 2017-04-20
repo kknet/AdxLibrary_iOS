@@ -33,9 +33,11 @@ ADX Library for iOS
   s.ios.vendored_frameworks =   'ADXLibrary/Dependencies/FBAudienceNetwork.framework',
                                 'ADXLibrary/Dependencies/MobFoxSDKCore.framework',
                                 'ADXLibrary/Dependencies/MVSDK.framework',
-                                'ADXLibrary/Dependencies/MVSDKAppWall.framework',
-                                'ADXLibrary/Dependencies/GoogleMobileAds.framework'
+                                'ADXLibrary/Dependencies/MVSDKAppWall.framework'
+
   s.dependency 'mopub-ios-sdk'
+  s.dependency 'Firebase/AdMob'
+  s.dependency 'Firebase/AdMob'
 
   s.library       = 'z', 'sqlite3', 'xml2'
 end
