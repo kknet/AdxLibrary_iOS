@@ -37,7 +37,6 @@ ADX Library for iOS
 
   s.dependency 'mopub-ios-sdk'
   s.dependency 'Firebase/AdMob'
-  s.dependency 'Firebase/AdMob'
 
   s.library       = 'z', 'sqlite3', 'xml2'
 end
