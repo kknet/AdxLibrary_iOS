@@ -79,7 +79,7 @@
     return nil;
   }
 
-  self.adapter = adapter;
+  self.adapter = (MPGoogleAdMobNativeAdAdapter *)adapter;
 
   if ([self.renderingViewClass respondsToSelector:@selector(nibForAd)]) {
     self.adView = (UIView<MPNativeAdRendering> *)[
@@ -108,6 +108,7 @@
   [self.adView addSubview:gadAppInstallAdView];
   [gadAppInstallAdView gad_fillSuperview];
 
+  gadAppInstallAdView.adChoicesView = (GADAdChoicesView *)[self.adapter privacyInformationIconView];
   gadAppInstallAdView.nativeAppInstallAd = self.adapter.adMobNativeAppInstallAd;
   if ([self.adView respondsToSelector:@selector(nativeTitleTextLabel)]) {
     UILabel *headlineView = [[UILabel alloc] initWithFrame:CGRectZero];
@@ -174,6 +175,13 @@
       [self.adView layoutStarRating:starRatingNum];
     }
   }
+
+  // See if the ad contains the nativePrivacyInformationIconImageView and add GADAdChoices view
+  // as its subview if it does.
+  if ([self.adView respondsToSelector:@selector(nativePrivacyInformationIconImageView)]) {
+    [self.adView.nativePrivacyInformationIconImageView
+     addSubview:gadAppInstallAdView.adChoicesView];
+  }
 }
 
 /// Creates native app content ad view with adapter. We added GADNativeContentAdView assets on top
@@ -184,6 +192,7 @@
   [self.adView addSubview:gadAppContentAdView];
   [gadAppContentAdView gad_fillSuperview];
 
+  gadAppContentAdView.adChoicesView = (GADAdChoicesView *)[self.adapter privacyInformationIconView];
   gadAppContentAdView.nativeContentAd = self.adapter.adMobNativeContentAd;
   if ([self.adView respondsToSelector:@selector(nativeTitleTextLabel)]) {
     UILabel *headlineView = [[UILabel alloc] initWithFrame:CGRectZero];
@@ -239,6 +248,13 @@
     gadAppContentAdView.logoView = iconView;
     [self.adView.nativeIconImageView addSubview:iconView];
     [iconView gad_fillSuperview];
+  }
+
+  // See if the ad contains the nativePrivacyInformationIconImageView and add GADAdChoices view
+  // as its subview if it does.
+  if ([self.adView respondsToSelector:@selector(nativePrivacyInformationIconImageView)]) {
+    [self.adView.nativePrivacyInformationIconImageView
+     addSubview:gadAppContentAdView.adChoicesView];
   }
 }
 
