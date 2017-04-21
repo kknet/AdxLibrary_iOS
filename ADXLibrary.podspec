@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ADXLibrary'
-  s.version          = '1.0.1'
+  s.version          = '1.0.2'
   s.summary          = 'ADX Library for iOS'
   s.description      = <<-DESC
 ADX Library for iOS
@@ -35,6 +35,7 @@ ADX Library for iOS
                                 'ADXLibrary/Dependencies/MVSDK.framework',
                                 'ADXLibrary/Dependencies/MVSDKAppWall.framework',
                                 'ADXLibrary/Dependencies/GoogleMobileAds.framework'
+
   s.dependency 'mopub-ios-sdk'
 
   s.library       = 'z', 'sqlite3', 'xml2'
